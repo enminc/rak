@@ -1,0 +1,753 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 21, ../../../scss/partials/_base.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 26, ../../../scss/partials/_base.scss */
+.clear {
+  height: 0;
+  clear: both;
+}
+
+/* line 32, ../../../scss/partials/_base.scss */
+body {
+  font-family: "Myriad Pro", "Source Sans Pro";
+}
+
+/* line 36, ../../../scss/partials/_base.scss */
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 41, ../../../scss/partials/_base.scss */
+strong {
+  font-weight: bold;
+}
+
+/* Colors */
+/* line 13, ../../../scss/partials/_susy-grids.scss */
+.show-grid {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(16.66667%, rgba(100, 100, 225, 0.25)), color-stop(16.66667%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(100, 100, 225, 0.25)), color-stop(37.5%, rgba(100, 100, 225, 0.25)), color-stop(37.5%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(100, 100, 225, 0.25)), color-stop(58.33333%, rgba(100, 100, 225, 0.25)), color-stop(58.33333%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(100, 100, 225, 0.25)), color-stop(79.16667%, rgba(100, 100, 225, 0.25)), color-stop(79.16667%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
+}
+
+/* line 17, ../../../scss/partials/_susy-grids.scss */
+.toggle-grid-container {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* line 22, ../../../scss/partials/_susy-grids.scss */
+.toggle-grid-container a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAG0lEQVQYV2OMq7zlwwAEi9rVtoBodD7jyFAAAIYbQAmBA1eGAAAAAElFTkSuQmCC) repeat scroll 0 0;
+}
+/* line 29, ../../../scss/partials/_susy-grids.scss */
+.toggle-grid-container a:hover {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAG0lEQVQYV2Nc1ybuwwAEQVUvt4BodD7jyFAAAFMbQAkY8D35AAAAAElFTkSuQmCC) repeat scroll 0 0;
+}
+
+/* line 1, ../../../scss/partials/_buttons.scss */
+button, .button {
+  font-size: 26px;
+  padding: 0.3em 1em;
+  color: black;
+  display: inline-block;
+  cursor: pointer;
+  color: #000;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFFFD71A', endColorstr='#FFB39400');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffed9a), color-stop(50%, #ffd71a), color-stop(100%, #e6be00));
+  background: -webkit-linear-gradient(#ffed9a, #ffd71a 50%, #e6be00);
+  background: -moz-linear-gradient(#ffed9a, #ffd71a 50%, #e6be00);
+  background: -o-linear-gradient(#ffed9a, #ffd71a 50%, #e6be00);
+  background: linear-gradient(#ffed9a, #ffd71a 50%, #e6be00);
+  -webkit-box-shadow: #fffbe6 0 1px 0 inset;
+  -moz-box-shadow: #fffbe6 0 1px 0 inset;
+  box-shadow: #fffbe6 0 1px 0 inset;
+  border: 1px solid #cda900;
+  text-shadow: #ffe259 0 1px 0;
+  /* 	@include sassy-button("glass", 10px, 19px, #ffcf0b); */
+}
+/* line 15, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+button:hover, .button:hover {
+  text-decoration: none;
+}
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+button:hover, .button:hover {
+  background-color: #e6be00;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffeb8f), color-stop(50%, #e6be00), color-stop(100%, #bd9c00));
+  background: -webkit-linear-gradient(#ffeb8f, #e6be00 50%, #bd9c00);
+  background: -moz-linear-gradient(#ffeb8f, #e6be00 50%, #bd9c00);
+  background: -o-linear-gradient(#ffeb8f, #e6be00 50%, #bd9c00);
+  background: linear-gradient(#ffeb8f, #e6be00 50%, #bd9c00);
+}
+/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+button:active, .button:active {
+  -webkit-box-shadow: #bd9c00 0 1px 2px inset;
+  -moz-box-shadow: #bd9c00 0 1px 2px inset;
+  box-shadow: #bd9c00 0 1px 2px inset;
+}
+/* line 6, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+button.disabled, button[disabled], .button.disabled, .button[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: #e6be00;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 76, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/_sassy-buttons.sass */
+button::-moz-focus-inner, .button::-moz-focus-inner {
+  padding: 0 !important;
+  margin: -1px !important;
+}
+
+/* line 1, ../../../scss/partials/_header.scss */
+header {
+  overflow: hidden;
+  padding: 1em 0;
+  clear: both;
+}
+/* line 6, ../../../scss/partials/_header.scss */
+header a.logo {
+  width: 300px;
+  height: 129px;
+  display: block;
+  background: white url(/assets/img/css/global/logo@320.jpg) no-repeat scroll 0 0;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+/* line 19, ../../../scss/partials/_header.scss */
+header h1 {
+  background: #895288;
+  color: #fff;
+  padding: 0.5em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+/* line 27, ../../../scss/partials/_header.scss */
+header nav {
+  background: #000;
+}
+/* line 33, ../../../scss/partials/_header.scss */
+header nav li {
+  display: inline-block;
+}
+/* line 37, ../../../scss/partials/_header.scss */
+header nav a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 0.25em 0.5em;
+}
+
+/* line 1, ../../../scss/partials/_footer.scss */
+footer {
+  clear: both;
+  background: #222222;
+  padding: 1em;
+}
+/* line 6, ../../../scss/partials/_footer.scss */
+footer nav {
+  margin-bottom: 1em;
+}
+/* line 9, ../../../scss/partials/_footer.scss */
+footer nav a {
+  color: #a1a09c;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 15, ../../../scss/partials/_footer.scss */
+footer nav li {
+  display: inline-block;
+  margin: 0 0.5em;
+  text-align: center;
+}
+/* line 22, ../../../scss/partials/_footer.scss */
+footer .license {
+  color: #454546;
+  font-size: 0.75em;
+}
+
+/* line 1, ../../../scss/partials/_sidebar.scss */
+sidebar {
+  display: none;
+}
+@media (min-width: 39em) {
+  /* line 1, ../../../scss/partials/_sidebar.scss */
+  sidebar {
+    display: block;
+    width: 23.07692%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 8, ../../../scss/partials/_sidebar.scss */
+  sidebar .sidebar-cta {
+    text-align: center;
+    margin-bottom: 1em;
+    border: 2px solid #ccc;
+  }
+  /* line 14, ../../../scss/partials/_sidebar.scss */
+  sidebar .aptitude-test {
+    text-align: right;
+    background: white url(/assets/img/css/sidebar/aptitude-test-med.png) no-repeat scroll left bottom;
+    padding: 10px;
+  }
+  /* line 19, ../../../scss/partials/_sidebar.scss */
+  sidebar .aptitude-test h1 {
+    color: #222;
+    font-size: 1.25em;
+    text-align: right;
+    margin-bottom: 1em;
+  }
+  /* line 25, ../../../scss/partials/_sidebar.scss */
+  sidebar .aptitude-test h1 strong {
+    font-weight: 700;
+    font-size: 1.25em;
+  }
+  /* line 31, ../../../scss/partials/_sidebar.scss */
+  sidebar .aptitude-test h2 {
+    text-align: right;
+    color: #222;
+    margin-bottom: 1em;
+    width: 50%;
+    margin-left: 50%;
+  }
+  /* line 38, ../../../scss/partials/_sidebar.scss */
+  sidebar .aptitude-test h2 strong {
+    text-transform: uppercase;
+  }
+  /* line 41, ../../../scss/partials/_sidebar.scss */
+  sidebar .aptitude-test h2 strong:nth-child(2) {
+    color: #895288;
+  }
+  /* line 47, ../../../scss/partials/_sidebar.scss */
+  sidebar .aptitude-test p {
+    color: #895288;
+  }
+  /* line 52, ../../../scss/partials/_sidebar.scss */
+  sidebar .newsletter {
+    border: none;
+  }
+  /* line 55, ../../../scss/partials/_sidebar.scss */
+  sidebar .newsletter a {
+    width: 100%;
+    font-size: 0.875em;
+  }
+  /* line 62, ../../../scss/partials/_sidebar.scss */
+  sidebar .case-studies a {
+    display: block;
+    background: white url(/assets/img/css/sidebar/causal.jpg) no-repeat scroll 50% bottom;
+    height: 192px;
+  }
+  /* line 68, ../../../scss/partials/_sidebar.scss */
+  sidebar .case-studies h1 {
+    background: #fff;
+  }
+  /* line 72, ../../../scss/partials/_sidebar.scss */
+  sidebar .case-studies h2 {
+    background: #222;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+@media (min-width: 59em) {
+  /* line 1, ../../../scss/partials/_sidebar.scss */
+  sidebar {
+    width: 23.72881%;
+    float: right;
+    margin-right: 0;
+  }
+  /* line 86, ../../../scss/partials/_sidebar.scss */
+  sidebar .aptitude-test {
+    background: white url(/assets/img/css/sidebar/aptitude-test.png) no-repeat scroll left bottom;
+  }
+}
+
+/* /sidebar */
+/* line 1, ../../../scss/partials/_layout.scss */
+.page {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 4, ../../../scss/partials/_layout.scss */
+.page.show-grid {
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(16.66667%, rgba(100, 100, 225, 0.25)), color-stop(16.66667%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(0, 0, 0, 0)), color-stop(20.83333%, rgba(100, 100, 225, 0.25)), color-stop(37.5%, rgba(100, 100, 225, 0.25)), color-stop(37.5%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(0, 0, 0, 0)), color-stop(41.66667%, rgba(100, 100, 225, 0.25)), color-stop(58.33333%, rgba(100, 100, 225, 0.25)), color-stop(58.33333%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(0, 0, 0, 0)), color-stop(62.5%, rgba(100, 100, 225, 0.25)), color-stop(79.16667%, rgba(100, 100, 225, 0.25)), color-stop(79.16667%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(0, 0, 0, 0)), color-stop(83.33333%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 16.66667%, rgba(0, 0, 0, 0) 16.66667%, rgba(0, 0, 0, 0) 20.83333%, rgba(100, 100, 225, 0.25) 20.83333%, rgba(100, 100, 225, 0.25) 37.5%, rgba(0, 0, 0, 0) 37.5%, rgba(0, 0, 0, 0) 41.66667%, rgba(100, 100, 225, 0.25) 41.66667%, rgba(100, 100, 225, 0.25) 58.33333%, rgba(0, 0, 0, 0) 58.33333%, rgba(0, 0, 0, 0) 62.5%, rgba(100, 100, 225, 0.25) 62.5%, rgba(100, 100, 225, 0.25) 79.16667%, rgba(0, 0, 0, 0) 79.16667%, rgba(0, 0, 0, 0) 83.33333%, rgba(100, 100, 225, 0.25) 83.33333%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+  background-position: left top;
+  -webkit-background-origin: content;
+  -moz-background-origin: content;
+  -ms-background-origin: content-box;
+  -o-background-origin: content-box;
+  background-origin: content-box;
+  -webkit-background-clip: content-box;
+  -moz-background-clip: content-box;
+  background-clip: content-box;
+}
+/* line 8, ../../../scss/partials/_layout.scss */
+.page .content {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+}
+/* line 12, ../../../scss/partials/_layout.scss */
+.page .hide-small {
+  display: none;
+}
+@media (min-width: 39em) {
+  /* line 19, ../../../scss/partials/_layout.scss */
+  .page.show-grid {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(10.25641%, rgba(100, 100, 225, 0.25)), color-stop(10.25641%, rgba(0, 0, 0, 0)), color-stop(12.82051%, rgba(0, 0, 0, 0)), color-stop(12.82051%, rgba(100, 100, 225, 0.25)), color-stop(23.07692%, rgba(100, 100, 225, 0.25)), color-stop(23.07692%, rgba(0, 0, 0, 0)), color-stop(25.64103%, rgba(0, 0, 0, 0)), color-stop(25.64103%, rgba(100, 100, 225, 0.25)), color-stop(35.89744%, rgba(100, 100, 225, 0.25)), color-stop(35.89744%, rgba(0, 0, 0, 0)), color-stop(38.46154%, rgba(0, 0, 0, 0)), color-stop(38.46154%, rgba(100, 100, 225, 0.25)), color-stop(48.71795%, rgba(100, 100, 225, 0.25)), color-stop(48.71795%, rgba(0, 0, 0, 0)), color-stop(51.28205%, rgba(0, 0, 0, 0)), color-stop(51.28205%, rgba(100, 100, 225, 0.25)), color-stop(61.53846%, rgba(100, 100, 225, 0.25)), color-stop(61.53846%, rgba(0, 0, 0, 0)), color-stop(64.10256%, rgba(0, 0, 0, 0)), color-stop(64.10256%, rgba(100, 100, 225, 0.25)), color-stop(74.35897%, rgba(100, 100, 225, 0.25)), color-stop(74.35897%, rgba(0, 0, 0, 0)), color-stop(76.92308%, rgba(0, 0, 0, 0)), color-stop(76.92308%, rgba(100, 100, 225, 0.25)), color-stop(87.17949%, rgba(100, 100, 225, 0.25)), color-stop(87.17949%, rgba(0, 0, 0, 0)), color-stop(89.74359%, rgba(0, 0, 0, 0)), color-stop(89.74359%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(100, 100, 225, 0.25)), color-stop(100%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 10.25641%, rgba(0, 0, 0, 0) 10.25641%, rgba(0, 0, 0, 0) 12.82051%, rgba(100, 100, 225, 0.25) 12.82051%, rgba(100, 100, 225, 0.25) 23.07692%, rgba(0, 0, 0, 0) 23.07692%, rgba(0, 0, 0, 0) 25.64103%, rgba(100, 100, 225, 0.25) 25.64103%, rgba(100, 100, 225, 0.25) 35.89744%, rgba(0, 0, 0, 0) 35.89744%, rgba(0, 0, 0, 0) 38.46154%, rgba(100, 100, 225, 0.25) 38.46154%, rgba(100, 100, 225, 0.25) 48.71795%, rgba(0, 0, 0, 0) 48.71795%, rgba(0, 0, 0, 0) 51.28205%, rgba(100, 100, 225, 0.25) 51.28205%, rgba(100, 100, 225, 0.25) 61.53846%, rgba(0, 0, 0, 0) 61.53846%, rgba(0, 0, 0, 0) 64.10256%, rgba(100, 100, 225, 0.25) 64.10256%, rgba(100, 100, 225, 0.25) 74.35897%, rgba(0, 0, 0, 0) 74.35897%, rgba(0, 0, 0, 0) 76.92308%, rgba(100, 100, 225, 0.25) 76.92308%, rgba(100, 100, 225, 0.25) 87.17949%, rgba(0, 0, 0, 0) 87.17949%, rgba(0, 0, 0, 0) 89.74359%, rgba(100, 100, 225, 0.25) 89.74359%, rgba(100, 100, 225, 0.25) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+  /* line 23, ../../../scss/partials/_layout.scss */
+  .page .content {
+    width: 74.35897%;
+    float: left;
+    margin-right: 2.5641%;
+  }
+  /* line 27, ../../../scss/partials/_layout.scss */
+  .page .hide-small {
+    display: block;
+  }
+}
+@media (min-width: 59em) {
+  /* line 1, ../../../scss/partials/_layout.scss */
+  .page {
+    max-width: 59em;
+  }
+  /* line 36, ../../../scss/partials/_layout.scss */
+  .page.show-grid {
+    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(100, 100, 225, 0.25)), color-stop(6.77966%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(0, 0, 0, 0)), color-stop(8.47458%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(100, 100, 225, 0.25)), color-stop(15.25424%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(0, 0, 0, 0)), color-stop(16.94915%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(100, 100, 225, 0.25)), color-stop(23.72881%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(0, 0, 0, 0)), color-stop(25.42373%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(100, 100, 225, 0.25)), color-stop(32.20339%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(0, 0, 0, 0)), color-stop(33.89831%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(100, 100, 225, 0.25)), color-stop(40.67797%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(0, 0, 0, 0)), color-stop(42.37288%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(100, 100, 225, 0.25)), color-stop(49.15254%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(0, 0, 0, 0)), color-stop(50.84746%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(100, 100, 225, 0.25)), color-stop(57.62712%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(0, 0, 0, 0)), color-stop(59.32203%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(100, 100, 225, 0.25)), color-stop(66.10169%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(0, 0, 0, 0)), color-stop(67.79661%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(100, 100, 225, 0.25)), color-stop(74.57627%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(0, 0, 0, 0)), color-stop(76.27119%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(100, 100, 225, 0.25)), color-stop(83.05085%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(0, 0, 0, 0)), color-stop(84.74576%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(100, 100, 225, 0.25)), color-stop(91.52542%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(0, 0, 0, 0)), color-stop(93.22034%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(100, 100, 225, 0.25)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(100, 100, 225, 0.25) 0%, rgba(100, 100, 225, 0.25) 6.77966%, rgba(0, 0, 0, 0) 6.77966%, rgba(0, 0, 0, 0) 8.47458%, rgba(100, 100, 225, 0.25) 8.47458%, rgba(100, 100, 225, 0.25) 15.25424%, rgba(0, 0, 0, 0) 15.25424%, rgba(0, 0, 0, 0) 16.94915%, rgba(100, 100, 225, 0.25) 16.94915%, rgba(100, 100, 225, 0.25) 23.72881%, rgba(0, 0, 0, 0) 23.72881%, rgba(0, 0, 0, 0) 25.42373%, rgba(100, 100, 225, 0.25) 25.42373%, rgba(100, 100, 225, 0.25) 32.20339%, rgba(0, 0, 0, 0) 32.20339%, rgba(0, 0, 0, 0) 33.89831%, rgba(100, 100, 225, 0.25) 33.89831%, rgba(100, 100, 225, 0.25) 40.67797%, rgba(0, 0, 0, 0) 40.67797%, rgba(0, 0, 0, 0) 42.37288%, rgba(100, 100, 225, 0.25) 42.37288%, rgba(100, 100, 225, 0.25) 49.15254%, rgba(0, 0, 0, 0) 49.15254%, rgba(0, 0, 0, 0) 50.84746%, rgba(100, 100, 225, 0.25) 50.84746%, rgba(100, 100, 225, 0.25) 57.62712%, rgba(0, 0, 0, 0) 57.62712%, rgba(0, 0, 0, 0) 59.32203%, rgba(100, 100, 225, 0.25) 59.32203%, rgba(100, 100, 225, 0.25) 66.10169%, rgba(0, 0, 0, 0) 66.10169%, rgba(0, 0, 0, 0) 67.79661%, rgba(100, 100, 225, 0.25) 67.79661%, rgba(100, 100, 225, 0.25) 74.57627%, rgba(0, 0, 0, 0) 74.57627%, rgba(0, 0, 0, 0) 76.27119%, rgba(100, 100, 225, 0.25) 76.27119%, rgba(100, 100, 225, 0.25) 83.05085%, rgba(0, 0, 0, 0) 83.05085%, rgba(0, 0, 0, 0) 84.74576%, rgba(100, 100, 225, 0.25) 84.74576%, rgba(100, 100, 225, 0.25) 91.52542%, rgba(0, 0, 0, 0) 91.52542%, rgba(0, 0, 0, 0) 93.22034%, rgba(100, 100, 225, 0.25) 93.22034%, rgba(100, 100, 225, 0.25) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
+    background-position: left top;
+    -webkit-background-origin: content;
+    -moz-background-origin: content;
+    -ms-background-origin: content-box;
+    -o-background-origin: content-box;
+    background-origin: content-box;
+    -webkit-background-clip: content-box;
+    -moz-background-clip: content-box;
+    background-clip: content-box;
+  }
+  /* line 40, ../../../scss/partials/_layout.scss */
+  .page .content {
+    width: 74.57627%;
+    float: left;
+    margin-right: 1.69492%;
+  }
+}
+
+/* /.page */
+/* line 2, ../../../scss/pages/_home.scss */
+.home .home-slider {
+  margin-bottom: 3em;
+}
+/* line 5, ../../../scss/pages/_home.scss */
+.home .home-slider > div {
+  text-align: center;
+}
+/* line 9, ../../../scss/pages/_home.scss */
+.home .home-slider .head {
+  font-size: 3em;
+  line-height: 1.25em;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+}
+/* line 17, ../../../scss/pages/_home.scss */
+.home .home-slider > div {
+  display: block;
+  font-size: 2em;
+  color: #666;
+}
+/* line 23, ../../../scss/pages/_home.scss */
+.home .home-slider .highlight {
+  font-weight: bold;
+  font-size: 4.75em;
+  line-height: 1em;
+  color: #895288;
+  text-transform: uppercase;
+}
+/* line 31, ../../../scss/pages/_home.scss */
+.home .home-slider p {
+  color: #666;
+  margin-bottom: 1em;
+}
+/* line 37, ../../../scss/pages/_home.scss */
+.home .home-slider button:after {
+  content: "Watch 2 min. video";
+}
+/* line 43, ../../../scss/pages/_home.scss */
+.home .links {
+  margin-bottom: 2em;
+  border: 2px solid #bcbcbc;
+}
+/* line 47, ../../../scss/pages/_home.scss */
+.home .links h1 {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a979a7), color-stop(100%, #895288));
+  background: -webkit-linear-gradient(top, #a979a7, #895288);
+  background: -moz-linear-gradient(top, #a979a7, #895288);
+  background: -o-linear-gradient(top, #a979a7, #895288);
+  background: linear-gradient(top, #a979a7, #895288);
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2.5em;
+  font-weight: 700;
+}
+/* line 56, ../../../scss/pages/_home.scss */
+.home .links ul {
+  padding: 1em;
+}
+/* line 60, ../../../scss/pages/_home.scss */
+.home .links a {
+  display: block;
+  color: #666767;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 2em;
+}
+/* line 67, ../../../scss/pages/_home.scss */
+.home .links a:hover {
+  color: #444;
+}
+@media (min-width: 39em) {
+  /* line 74, ../../../scss/pages/_home.scss */
+  .home .links {
+    width: 31.03448%;
+    float: left;
+    margin-right: 3.44828%;
+    height: 22em;
+  }
+  /* line 78, ../../../scss/pages/_home.scss */
+  .home .links:first-child {
+    width: 31.03448%;
+    float: left;
+    margin-right: 3.44828%;
+  }
+  /* line 82, ../../../scss/pages/_home.scss */
+  .home .links:last-child {
+    width: 31.03448%;
+    float: right;
+    margin-right: 0;
+  }
+}
+@media (min-width: 59em) {
+  /* line 90, ../../../scss/pages/_home.scss */
+  .home .links {
+    width: 31.81818%;
+    float: left;
+    margin-right: 2.27273%;
+    height: 17em;
+  }
+  /* line 94, ../../../scss/pages/_home.scss */
+  .home .links:first-child {
+    width: 31.81818%;
+    float: left;
+    margin-right: 2.27273%;
+  }
+  /* line 98, ../../../scss/pages/_home.scss */
+  .home .links:last-child {
+    width: 31.81818%;
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* .home */
+/* line 2, ../../../scss/pages/_products.scss */
+.products .product-list {
+  margin-bottom: 2em;
+  background: #000;
+}
+/* line 6, ../../../scss/pages/_products.scss */
+.products .product-list:after {
+  content: "";
+  display: table;
+  visibility: hidden;
+  clear: both;
+}
+/* line 13, ../../../scss/pages/_products.scss */
+.products .product-list > div {
+  margin-bottom: 2em;
+  padding: 1em;
+}
+/* line 17, ../../../scss/pages/_products.scss */
+.products .product-list > div h1 {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  line-height: 1em;
+}
+/* line 24, ../../../scss/pages/_products.scss */
+.products .product-list > div h1 span {
+  color: #895288;
+}
+/* line 29, ../../../scss/pages/_products.scss */
+.products .product-list > div > p {
+  color: #fff;
+  text-align: center;
+}
+/* line 35, ../../../scss/pages/_products.scss */
+.products .product-list li {
+  width: 100%;
+  float: right;
+  margin-right: 0;
+  border-bottom: 1px solid #999;
+  background: black url(/assets/img/css/products/list-bg.png) no-repeat scroll top right;
+}
+/* line 40, ../../../scss/pages/_products.scss */
+.products .product-list li a {
+  display: block;
+  padding: 1em;
+  position: relative;
+  padding-left: 100px;
+  background: transparent;
+  color: #fff;
+}
+/* line 48, ../../../scss/pages/_products.scss */
+.products .product-list li a h2 {
+  font-size: 1em;
+  color: #999;
+}
+/* line 54, ../../../scss/pages/_products.scss */
+.products .product-list li a .product-thumb {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -40px;
+  width: 80px;
+  height: 80px;
+}
+/* line 62, ../../../scss/pages/_products.scss */
+.products .product-list li a .product-thumb.parent-test {
+  background: black url(http://placehold.it/80/80) no-repeat scroll 0 0;
+}
+@media (min-width: 59em) {
+  /* line 82, ../../../scss/pages/_products.scss */
+  .products .product-list > div h1 {
+    text-align: left;
+  }
+  /* line 86, ../../../scss/pages/_products.scss */
+  .products .product-list > div > p {
+    text-align: left;
+  }
+  /* line 91, ../../../scss/pages/_products.scss */
+  .products .product-list li {
+    float: left;
+    margin: 0 0 14px 9px;
+    background: #000;
+    width: 327px;
+    border: none;
+  }
+  /* line 98, ../../../scss/pages/_products.scss */
+  .products .product-list li a {
+    display: block;
+    width: 327px;
+    height: 285px;
+    padding: 0;
+    background: black url(/assets/img/pages/products/products-sprite.jpg) no-repeat scroll 0 0;
+    border: 1px solid #999;
+  }
+  /* line 106, ../../../scss/pages/_products.scss */
+  .products .product-list li a .title {
+    background: #303030;
+    padding: 8px 10px;
+  }
+  /* line 110, ../../../scss/pages/_products.scss */
+  .products .product-list li a .title h2, .products .product-list li a .title h3 {
+    color: #fff;
+    text-shadow: 1px 1px 3px #000;
+  }
+  /* line 115, ../../../scss/pages/_products.scss */
+  .products .product-list li a .title h2 {
+    text-transform: uppercase;
+    font-size: 1.25em;
+  }
+  /* line 120, ../../../scss/pages/_products.scss */
+  .products .product-list li a .title h3 {
+    font-size: 1em;
+  }
+  /* line 125, ../../../scss/pages/_products.scss */
+  .products .product-list li a .product-thumb {
+    display: none;
+  }
+  /* line 133, ../../../scss/pages/_products.scss */
+  .products .product-list li a.parent-test-digital {
+    background-position: -327px 0;
+  }
+  /* line 137, ../../../scss/pages/_products.scss */
+  .products .product-list li a.the-manual {
+    background-position: 0 -285px;
+  }
+  /* line 141, ../../../scss/pages/_products.scss */
+  .products .product-list li a.parent-class-plus-manual {
+    background-position: -327px -285px;
+  }
+  /* line 145, ../../../scss/pages/_products.scss */
+  .products .product-list li a.parent-class {
+    background-position: 0px -570px;
+  }
+  /* line 149, ../../../scss/pages/_products.scss */
+  .products .product-list li a.parent-class-digital {
+    background-position: -327px -570px;
+  }
+  /* line 153, ../../../scss/pages/_products.scss */
+  .products .product-list li a.parent-class-dvd {
+    background-position: 0px -855px;
+  }
+  /* line 157, ../../../scss/pages/_products.scss */
+  .products .product-list li a.bootcamp-weekend {
+    background-position: -327px -855px;
+  }
+  /* line 161, ../../../scss/pages/_products.scss */
+  .products .product-list li a.adhd-diagnose {
+    background-position: 0px -1140px;
+  }
+  /* line 165, ../../../scss/pages/_products.scss */
+  .products .product-list li a.rad-child {
+    background-position: -327px -1140px;
+  }
+  /* line 169, ../../../scss/pages/_products.scss */
+  .products .product-list li a.the-manual-digital {
+    background-position: 0px -1425px;
+  }
+  /* line 173, ../../../scss/pages/_products.scss */
+  .products .product-list li a.the-manual-gift {
+    background-position: -327px -1425px;
+  }
+}
+
+/* /.products */
+/* line 61, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+* html {
+  font-size: 100%;
+}
+
+/* line 64, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 16px;
+  line-height: 1.5em;
+}

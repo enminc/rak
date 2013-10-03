@@ -1,0 +1,49 @@
+$legacy-support-for-ie  : false;
+$legacy-support-for-ie6 : $legacy-support-for-ie;
+$legacy-support-for-ie7 : $legacy-support-for-ie;
+
+$relative-font-sizing: true;
+$browser-default-font-size: 16px;
+$base-font-size: 16px;
+$base-line-height: 24px;
+
+
+$img_dir: "/assets/img/css";
+
+
+
+@function em($target, $context: $base-font-size) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+
+* {
+	@include box-sizing(border-box);
+}
+
+
+.clear {
+	height: 0;
+	clear: both;
+}
+
+
+body {
+	font-family: "Myriad Pro", "Source Sans Pro";
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+
+
+
+/* Colors */
+$highlight: #895288;

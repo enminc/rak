@@ -1,0 +1,44 @@
+header {
+	overflow: hidden;
+	padding: 1em 0;
+	clear: both;
+	
+	a.logo {
+		width: 300px;
+		height: 129px;
+		display: block;
+		background: #fff url(#{$img_dir}/global/logo@320.jpg) no-repeat scroll 0 0;
+		margin: 0 auto;
+		margin-bottom: 1em;
+	}
+	@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+		
+	}
+	
+	
+	h1 {
+		background: #895288;
+		color: #fff;
+		padding: 0.5em;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	
+	nav {
+		background: #000;
+		
+		ul {
+		}
+		
+		li {
+			display: inline-block;
+		}
+		
+		a {
+			color: #fff;
+			display: block;
+			text-decoration: none;
+			padding: 0.25em 0.5em;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.page {
+	@include container;
+
+	&.show-grid {
+		@include susy-grid-background;
+	}
+
+	.content {
+		@include span-columns(5 alpha omega);
+	}
+
+	.hide-small {
+		display: none;
+	}
+
+@include at-breakpoint($break-m) {
+	@include set-container-width($break-m);
+
+	&.show-grid {
+		@include susy-grid-background;
+	}
+
+	.content {
+		@include span-columns(6 alpha);
+	}
+
+	.hide-small {
+		display: block;
+	}
+}
+
+
+@include at-breakpoint($break-l) {
+	@include set-container-width($break-l, magic);
+
+	&.show-grid {
+		@include susy-grid-background;
+	}
+
+	.content {
+		@include span-columns(9 alpha);
+	}
+}
+} /* /.page */

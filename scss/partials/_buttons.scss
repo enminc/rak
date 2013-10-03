@@ -1,0 +1,4 @@
+button, .button {
+	@include sassy-button("shiny", 7px, 26px, #ffd71a);
+/* 	@include sassy-button("glass", 10px, 19px, #ffcf0b); */
+}

@@ -1,0 +1,26 @@
+footer {
+	clear: both;
+	background: #222222;
+	padding: 1em;
+
+	nav {
+		margin-bottom: 1em;
+		
+		a {
+			color: #a1a09c;
+			text-decoration: none;
+			text-align: center;
+		}
+		
+		li {
+			display: inline-block;
+			margin: 0 0.5em;
+			text-align: center;
+		}
+	}
+		
+	.license {
+		color: #454546;
+		font-size: 0.75em;
+	}
+}

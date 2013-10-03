@@ -1,0 +1,33 @@
+$break-s: 5;
+$break-m: 8;
+$break-l: 12;
+
+$total-columns    : $break-s;
+$column-width     : 4em;
+$gutter-width     : 1em;
+$grid-padding     : 1em;
+$container-style: fluid;
+
+@import "susy"; // Keep below config
+
+.show-grid {
+	@include susy-grid-background;
+}
+
+.toggle-grid-container {
+	position: absolute;
+	right: 0;
+	top: 0;
+	
+	a {
+		display: block;
+		width: 24px;
+		height: 24px;
+		cursor: pointer;
+		background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAG0lEQVQYV2OMq7zlwwAEi9rVtoBodD7jyFAAAIYbQAmBA1eGAAAAAElFTkSuQmCC) repeat scroll 0 0;
+		
+		&:hover {
+			background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAG0lEQVQYV2Nc1ybuwwAEQVUvt4BodD7jyFAAAFMbQAkY8D35AAAAAElFTkSuQmCC)	repeat scroll 0 0;
+		}
+	}
+}

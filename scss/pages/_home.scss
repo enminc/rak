@@ -1,0 +1,104 @@
+.home {
+	.home-slider {
+		margin-bottom: 3em;
+		
+		> div {
+			text-align: center;
+		}
+
+		.head {
+			font-size: 3em;
+			line-height: 1.25em;
+			text-align: center;
+			color: #000;
+			text-transform: uppercase;
+		}
+		
+		> div {
+			display: block;
+			font-size: 2em;
+			color: #666;
+		}
+			
+		.highlight {
+			font-weight: bold;
+			font-size: 4.75em;
+			line-height: 1em;
+			color: #895288;
+			text-transform: uppercase;
+		}
+		
+		p {
+			color: #666;
+			margin-bottom: 1em;
+		}
+		
+		
+		button:after {
+			content: "Watch 2 min. video";
+		}
+	}
+
+
+	.links {
+		margin-bottom: 2em;
+		border: 2px solid #bcbcbc;
+		
+		h1 {
+			@include background(linear-gradient(top, #a979a7, #895288));
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			line-height: 2.5em;
+			font-weight: 700;
+		}
+		
+		ul {
+			padding: 1em;
+		}
+		
+		a {
+			display: block;
+			color: #666767;
+			text-decoration: none;
+			font-weight: 700;
+			line-height: 2em;
+			
+			&:hover {
+				color: #444;
+			}
+		}
+	}
+
+@include at-breakpoint($break-m) {
+	.links {
+		@include span-columns(2, 6);
+		height: 22em;
+			
+		&:first-child {
+			@include span-columns(2 alpha, 6);
+		}
+
+		&:last-child {
+			@include span-columns(2 omega, 6);
+		}
+	}
+}
+
+
+@include at-breakpoint($break-l) {
+	.links {
+		@include span-columns(3, 9);
+		height: 17em;
+
+		&:first-child {
+			@include span-columns(3 alpha, 9);
+		}
+
+		&:last-child {
+			@include span-columns(3 omega, 9);
+		}
+	}
+}
+
+} /* .home */

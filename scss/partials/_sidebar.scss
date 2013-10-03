@@ -1,0 +1,92 @@
+sidebar {
+	display: none;
+
+@include at-breakpoint($break-m) {
+	display: block;
+	@include span-columns(2 omega);
+
+	.sidebar-cta {
+		text-align: center;
+		margin-bottom: 1em;
+		border: 2px solid #ccc;
+	}
+	
+	.aptitude-test {
+		text-align: right;
+		background: #fff url(/assets/img/css/sidebar/aptitude-test-med.png) no-repeat scroll left bottom;
+		padding: 10px;
+		
+		h1 {
+			color: #222;
+			font-size: 1.25em;
+			text-align: right;
+			margin-bottom: 1em;
+			
+			strong {
+				font-weight: 700;
+				font-size: 1.25em;
+			}
+		}
+		
+		h2 {
+			text-align: right;
+			color: #222;
+			margin-bottom: 1em;
+			width: 50%;
+			margin-left: 50%;
+
+			strong {
+				text-transform: uppercase;
+				
+				&:nth-child(2) {
+					color: #895288;
+				}
+			}
+		}
+		
+		p {
+			color: #895288;
+		}
+	}
+	
+	.newsletter {
+		border: none;
+		
+		a {
+			width: 100%;
+			font-size: 0.875em;
+		}
+	}
+	
+	.case-studies {
+		a {
+			display: block;
+			background: #fff url(/assets/img/css/sidebar/causal.jpg) no-repeat scroll 50% bottom;
+			height: 192px;
+		}
+		
+		h1 {
+			background: #fff;
+		}
+		
+		h2 {
+			background: #222;
+			background: rgba(0, 0, 0, 0.8);
+			color: #fff;
+			text-transform: uppercase;
+		}
+		
+	}
+}
+
+
+@include at-breakpoint($break-l) {
+	@include span-columns(3 omega);
+
+	.aptitude-test {
+		background: #fff url(/assets/img/css/sidebar/aptitude-test.png) no-repeat scroll left bottom;
+	}
+}
+
+
+} /* /sidebar */
