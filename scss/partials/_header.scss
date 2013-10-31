@@ -26,12 +26,20 @@ header {
 	
 	nav {
 		background: #000;
+		background: linear-gradient(#323232 0%, #333333 50%, #101010 51%, #242424 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 		
 		ul {
+			max-width: 59em;	
+			margin: 0 auto;
+			@include clearfix;
 		}
 		
 		li {
-			display: inline-block;
+			float: left;
+			@include clearfix;
+/* 			@include sassy-button("glass", 0, 12px); */
+			@include sassy-button-gradient("glass", #323232); 
+/* 			background: linear-gradient(#323232 50%, #333333 51%, #101010 53%, #242424 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); */
 		}
 		
 		a {

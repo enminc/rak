@@ -37,7 +37,7 @@
 
 <script>
 $(function() {
-	$('header nav ul').rmenu();
+	$('header nav').rmenu();
 });
 </script>
 

@@ -6,27 +6,49 @@ $.fn.rmenu = function(options) {
 			config = $.extend({
 				throttle: 1,
 				threshold: 480,
-				moreReveal: '.r-menu-more-reveal',
+				mainClass: 'r-menu',
+				moreReveal: 'r-menu-more-reveal',
 				selected: 'selected'
 			}, options),
-			$cloned = $this.clone();
+			$cloned,
 			$origUl = $('ul', $this),
-			$origLi = $origUl.children('li').not('li li'),
-			$clonedUl = $('ul', $cloned),
-			$clonedLi = null,
-			$moreReveal = $(config.moreReveal);
+			$origLi,
+			$clonedUl,
+			$clonedLi,
+			$moreReveal;
+			
 
-		// Meh, need to make clone so can perform calculations, cloned copy kept offscreen
+		// Append 'more' li
+		$origUl.append('<li class="' + config.moreReveal + '"  style="display: none;"><a class="more">More</a></li>');
+
+		$origUl.addClass(config.mainClass);
+		$cloned = $this.clone();
+		$origLi = $origUl.children('li').not('li li'),
+		$clonedUl = $('ul', $cloned),
+		$clonedLi = null,
+		$moreReveal = $(config.moreReveal);
+
+/*
+		console.log('this', $this);
+		console.log('cloned', $cloned);
+		console.log('origUl', $origUl);
+		console.log('origLi', $origLi);
+		console.log('clonedUl', $clonedUl);
+*/
+
+
+		// Need to make clone so can perform calculations, cloned copy kept offscreen
 		$this.parent().append($cloned.css({
 			position: 'absolute',
-			top: '-9999em',
-			left: '-9999em'
+			top: '-999em',
+			left: '999em',
+			width: '999em'
 		}));
 
 		$moreReveal.hide();
 
 		$clonedLi = $clonedUl.children();
-		$clonedLi.find('.more').hide();
+		$clonedLi.find('.' + config.moreReveal).hide();
 		
 		$(window).on('resize', function() {
 			var last,
@@ -34,19 +56,27 @@ $.fn.rmenu = function(options) {
 				aggw = 0,
 				liWidth = 0;
 
-			$clonedLi.not('.more').each(function(i, j) {
+			$clonedLi.not('.' + config.moreReveal).each(function(i, j) {
 				liWidth += $(j).outerWidth();
 			});
 
+/*
+			console.log(liWidth);
+			console.log(ow);
+*/
+
 			if(liWidth > ow) {
 				// Menu won't fit
-				aggw += $clonedLi.filter('.more').outerWidth();
+/* 				console.log($clonedLi.filter('.' + config.moreReveal)); */
+				aggw += $clonedLi.filter('.' + config.moreReveal).show().outerWidth();
 				var t = aggw,
 					toReveal;
-					
-				$clonedLi.find('.more').hide();
 
-				toReveal = $clonedLi.not('.more').map(function(i, j) {
+					console.log(t);
+					
+				$clonedLi.find('.' + config.moreReveal).hide();
+
+				toReveal = $clonedLi.not('.' + config.moreReveal).map(function(i, j) {
 					aggw += $(j).outerWidth();
 					if(aggw > ow) {
 						return $($origLi[i]).hide().clone();
@@ -56,7 +86,7 @@ $.fn.rmenu = function(options) {
 					}
 				});
 
-				$origLi.filter('.more').show();
+				$origLi.filter('.' + config.moreReveal).show();
 				
 				var frag = $('<ul/>');
 				$.each(toReveal, function(i, j) {
@@ -66,16 +96,16 @@ $.fn.rmenu = function(options) {
 				$moreReveal.empty().append(frag);
 			}
 			else {
-				$origLi.show().filter('.more').hide();
+				$origLi.show().filter('.' + config.moreReveal).hide();
 				$moreReveal.empty();
 			}
 		}).resize();
 		
-		$this.find('.more').on('click', function() {
+		$this.find('.' + config.moreReveal).on('click', function() {
 			$moreReveal.slideToggle();
 		});
 		
-		$origLi.not('.more').hover(function() {
+		$origLi.not('.' + config.moreReveal).hover(function() {
 			var $t = $(this).children('a:first-child').addClass(config.selected).end();
 			$t.find('.rmenu-mega').fadeIn(200);
 		}, function() {

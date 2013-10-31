@@ -31,6 +31,8 @@ $img_dir: "/assets/img/css";
 
 body {
 	font-family: "Myriad Pro", "Source Sans Pro";
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 a {

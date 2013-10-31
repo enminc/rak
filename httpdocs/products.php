@@ -14,7 +14,7 @@
 		<ul>
 			<li>
 				<a href="#" class="parent-test">
-					<div class="product-thumb"></div>
+					<div class="product-thumb parent-test"></div>
 					<div class="arrow"></div>
 
 					<div class="title">
@@ -48,7 +48,7 @@
 					<div class="product-thumb"></div>
 					<div class="arrow"></div>
 					<div class="title">
-						<h2> Four Hour Condensed Parenting Class On Audio CD</h2>
+						<h2>Condensed Parenting Class On Audio CD</h2>
 						<h3>PLUS The Manual</h3>
 					</div>
 				</a>
