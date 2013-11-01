@@ -202,17 +202,9 @@ header {
   overflow: hidden;
   padding: 1em 0;
   clear: both;
+  /* /.container */
 }
 /* line 6, ../../../scss/partials/_header.scss */
-header a.logo {
-  width: 300px;
-  height: 129px;
-  display: block;
-  background: white url(/assets/img/css/global/logo@320.jpg) no-repeat scroll 0 0;
-  margin: 0 auto;
-  margin-bottom: 1em;
-}
-/* line 19, ../../../scss/partials/_header.scss */
 header h1 {
   background: #895288;
   color: #fff;
@@ -220,18 +212,18 @@ header h1 {
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 27, ../../../scss/partials/_header.scss */
+/* line 14, ../../../scss/partials/_header.scss */
 header nav {
   background: #000;
   background: linear-gradient(#323232 0%, #333333 50%, #101010 51%, #242424 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
-/* line 31, ../../../scss/partials/_header.scss */
+/* line 18, ../../../scss/partials/_header.scss */
 header nav ul {
   max-width: 59em;
   margin: 0 auto;
   overflow: hidden;
 }
-/* line 37, ../../../scss/partials/_header.scss */
+/* line 24, ../../../scss/partials/_header.scss */
 header nav li {
   float: left;
   overflow: hidden;
@@ -278,14 +270,72 @@ header nav li.disabled, header nav li[disabled] {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 45, ../../../scss/partials/_header.scss */
+/* line 32, ../../../scss/partials/_header.scss */
 header nav a {
   color: #fff;
   display: block;
   text-decoration: none;
   padding: 0.25em 0.5em;
 }
+/* line 38, ../../../scss/partials/_header.scss */
+header nav a:hover {
+  color: #ac7bce;
+}
+/* line 44, ../../../scss/partials/_header.scss */
+header .container {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+header .container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 47, ../../../scss/partials/_header.scss */
+header .container .logo {
+  width: 300px;
+  height: 129px;
+  display: block;
+  background: white url(/assets/img/css/global/logo@320.jpg) no-repeat scroll 0 0;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 57, ../../../scss/partials/_header.scss */
+  header .container a.logo {
+    width: 300px;
+    height: 129px;
+    display: block;
+    background: white url(/assets/img/css/global/logo@320.jpg) no-repeat scroll 0 0;
+    margin: 0 auto;
+    margin-bottom: 1em;
+  }
+}
+@media (min-width: 39em) {
+  /* line 44, ../../../scss/partials/_header.scss */
+  header .container {
+    background: white url(/assets/img/css/global/header-fam@768.png) no-repeat scroll right top;
+  }
+  /* line 71, ../../../scss/partials/_header.scss */
+  header .container .logo {
+    width: 300px;
+    height: 129px;
+    display: inline-block;
+    margin: 0;
+  }
+}
+@media (min-width: 59em) {
+  /* line 44, ../../../scss/partials/_header.scss */
+  header .container {
+    max-width: 59em;
+    background: white url(/assets/img/css/global/header-fam.png) no-repeat scroll right top;
+  }
+}
 
+/* /header */
 /* line 1, ../../../scss/partials/_footer.scss */
 footer {
   clear: both;

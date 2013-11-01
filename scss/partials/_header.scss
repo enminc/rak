@@ -2,20 +2,7 @@ header {
 	overflow: hidden;
 	padding: 1em 0;
 	clear: both;
-	
-	a.logo {
-		width: 300px;
-		height: 129px;
-		display: block;
-		background: #fff url(#{$img_dir}/global/logo@320.jpg) no-repeat scroll 0 0;
-		margin: 0 auto;
-		margin-bottom: 1em;
-	}
-	@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-		
-	}
-	
-	
+
 	h1 {
 		background: #895288;
 		color: #fff;
@@ -23,7 +10,7 @@ header {
 		text-align: center;
 		margin-bottom: 1em;
 	}
-	
+
 	nav {
 		background: #000;
 		background: linear-gradient(#323232 0%, #333333 50%, #101010 51%, #242424 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -47,6 +34,57 @@ header {
 			display: block;
 			text-decoration: none;
 			padding: 0.25em 0.5em;
+			
+			&:hover {
+				color: #ac7bce;
+			}
 		}
 	}
+
+	.container {
+		@include container;
+	
+		.logo {
+			width: 300px;
+			height: 129px;
+			display: block;
+			background: #fff url(#{$img_dir}/global/logo@320.jpg) no-repeat scroll 0 0;
+			margin: 0 auto;
+			margin-bottom: 1em;
+		}
+
+		@media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+			a.logo {
+				width: 300px;
+				height: 129px;
+				display: block;
+				background: #fff url(#{$img_dir}/global/logo@320.jpg) no-repeat scroll 0 0;
+				margin: 0 auto;
+				margin-bottom: 1em;
+			}
+		}
+		
+		
+@include at-breakpoint($break-m) {
+		@include set-container-width($break-m);
+
+		.logo {
+			width: 300px;
+			height: 129px;
+			display: inline-block;
+			margin: 0;
+		}
+		
+		background: #fff url(/assets/img/css/global/header-fam@768.png) no-repeat scroll right top;
 }
+
+
+@include at-breakpoint($break-l) {
+		@include set-container-width($break-l, magic);
+		
+		background: #fff url(/assets/img/css/global/header-fam.png) no-repeat scroll right top;
+}
+
+
+} /* /.container */
+} /* /header */
