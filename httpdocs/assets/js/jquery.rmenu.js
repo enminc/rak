@@ -96,21 +96,13 @@ $.fn.rmenu = function(options) {
 			}
 			else {
 				$origLi.show().filter('.' + config.moreReveal).hide();
-				$moreReveal.empty();
+				$moreReveal.find('>div').html('');
 			}
 		}).resize();
 		
 		$this.find('.' + config.moreReveal + ' .more').on('click', function(ev) {
 			ev.preventDefault();
-			var t = $moreReveal.find('>div');
-				
-			t.animate({
-				opacity: 'toggle',
-				height: 'toggle',
-				queue: false
-			}, 300);
-			
-/* 			t.slideToggle(200); */
+			toggleMenu();
 		});
 		
 		$origLi.not('.' + config.moreReveal).hover(function() {
@@ -120,6 +112,16 @@ $.fn.rmenu = function(options) {
 			var $t = $(this).children('a:first-child').removeClass(config.selected).end();
 			$t.find('.rmenu-mega').fadeOut(200);
 		});
+		
+		function toggleMenu() {
+			var t = $moreReveal.find('>div');
+
+			t.animate({
+				opacity: 'toggle',
+				height: 'toggle',
+				queue: false
+			}, 300);
+		}
 	});
 }
 
