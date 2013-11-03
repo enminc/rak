@@ -136,6 +136,68 @@ strong {
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAAG0lEQVQYV2Nc1ybuwwAEQVUvt4BodD7jyFAAAFMbQAkY8D35AAAAAElFTkSuQmCC) repeat scroll 0 0;
 }
 
+/* line 7, ../../../scss/partials/_r-menu.scss */
+.r-menu li a {
+  padding: 0 1em;
+  line-height: 1.75em;
+}
+
+/* line 15, ../../../scss/partials/_r-menu.scss */
+.r-menu-more-reveal > div {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+}
+/* line 23, ../../../scss/partials/_r-menu.scss */
+.r-menu-more-reveal > div > ul li {
+  width: 100%;
+  clear: both;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF323232', endColorstr='#FF000000');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #727272), color-stop(50%, #323232), color-stop(100%, #191919));
+  background: -webkit-linear-gradient(#727272, #323232 50%, #191919);
+  background: -moz-linear-gradient(#727272, #323232 50%, #191919);
+  background: -o-linear-gradient(#727272, #323232 50%, #191919);
+  background: linear-gradient(#727272, #323232 50%, #191919);
+  -webkit-box-shadow: #989898 0 1px 0 inset;
+  -moz-box-shadow: #989898 0 1px 0 inset;
+  box-shadow: #989898 0 1px 0 inset;
+  border: 1px solid #0c0c0c;
+  text-shadow: #515151 0 1px 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=97);
+  opacity: 0.97;
+}
+/* line 15, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.r-menu-more-reveal > div > ul li:hover {
+  text-decoration: none;
+}
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.r-menu-more-reveal > div > ul li:hover {
+  background-color: #191919;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6d6d6d), color-stop(50%, #191919), color-stop(100%, #040404));
+  background: -webkit-linear-gradient(#6d6d6d, #191919 50%, #040404);
+  background: -moz-linear-gradient(#6d6d6d, #191919 50%, #040404);
+  background: -o-linear-gradient(#6d6d6d, #191919 50%, #040404);
+  background: linear-gradient(#6d6d6d, #191919 50%, #040404);
+}
+/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.r-menu-more-reveal > div > ul li:active {
+  -webkit-box-shadow: #040404 0 1px 2px inset;
+  -moz-box-shadow: #040404 0 1px 2px inset;
+  box-shadow: #040404 0 1px 2px inset;
+}
+/* line 6, ../../../../../../../Library/Ruby/Gems/1.8/gems/sassy-buttons-0.2/stylesheets/sassy-buttons/_sassy-button-pseudo-states.sass */
+.r-menu-more-reveal > div > ul li.disabled, .r-menu-more-reveal > div > ul li[disabled] {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+  opacity: 0.6;
+  background: #191919;
+  cursor: default;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 /* line 1, ../../../scss/partials/_buttons.scss */
 button, .button {
   font-size: 26px;
@@ -199,12 +261,11 @@ button::-moz-focus-inner, .button::-moz-focus-inner {
 
 /* line 1, ../../../scss/partials/_header.scss */
 header {
-  overflow: hidden;
   padding: 1em 0;
   clear: both;
   /* /.container */
 }
-/* line 6, ../../../scss/partials/_header.scss */
+/* line 5, ../../../scss/partials/_header.scss */
 header h1 {
   background: #895288;
   color: #fff;
@@ -212,21 +273,27 @@ header h1 {
   text-align: center;
   margin-bottom: 1em;
 }
-/* line 14, ../../../scss/partials/_header.scss */
+/* line 13, ../../../scss/partials/_header.scss */
 header nav {
   background: #000;
   background: linear-gradient(#323232 0%, #333333 50%, #101010 51%, #242424 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
-/* line 18, ../../../scss/partials/_header.scss */
+/* line 17, ../../../scss/partials/_header.scss */
 header nav ul {
   max-width: 59em;
   margin: 0 auto;
-  overflow: hidden;
 }
-/* line 24, ../../../scss/partials/_header.scss */
+/* line 2, ../../../scss/partials/_mixins.scss */
+header nav ul:after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+/* line 23, ../../../scss/partials/_header.scss */
 header nav li {
   float: left;
-  overflow: hidden;
   /* 			@include sassy-button("glass", 0, 12px); */
   filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF323232', endColorstr='#FF000000');
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(50%, #464646), color-stop(51%, #323232));
@@ -270,18 +337,18 @@ header nav li.disabled, header nav li[disabled] {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-/* line 32, ../../../scss/partials/_header.scss */
+/* line 30, ../../../scss/partials/_header.scss */
 header nav a {
   color: #fff;
   display: block;
   text-decoration: none;
   padding: 0.25em 0.5em;
 }
-/* line 38, ../../../scss/partials/_header.scss */
+/* line 36, ../../../scss/partials/_header.scss */
 header nav a:hover {
   color: #ac7bce;
 }
-/* line 44, ../../../scss/partials/_header.scss */
+/* line 42, ../../../scss/partials/_header.scss */
 header .container {
   padding-left: 1em;
   padding-right: 1em;
@@ -294,7 +361,7 @@ header .container:after {
   display: table;
   clear: both;
 }
-/* line 47, ../../../scss/partials/_header.scss */
+/* line 45, ../../../scss/partials/_header.scss */
 header .container .logo {
   width: 300px;
   height: 129px;
@@ -304,7 +371,7 @@ header .container .logo {
   margin-bottom: 1em;
 }
 @media only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 57, ../../../scss/partials/_header.scss */
+  /* line 55, ../../../scss/partials/_header.scss */
   header .container a.logo {
     width: 300px;
     height: 129px;
@@ -315,11 +382,12 @@ header .container .logo {
   }
 }
 @media (min-width: 39em) {
-  /* line 44, ../../../scss/partials/_header.scss */
+  /* line 42, ../../../scss/partials/_header.scss */
   header .container {
+    height: 170px;
     background: white url(/assets/img/css/global/header-fam@768.png) no-repeat scroll right top;
   }
-  /* line 71, ../../../scss/partials/_header.scss */
+  /* line 70, ../../../scss/partials/_header.scss */
   header .container .logo {
     width: 300px;
     height: 129px;
@@ -328,9 +396,10 @@ header .container .logo {
   }
 }
 @media (min-width: 59em) {
-  /* line 44, ../../../scss/partials/_header.scss */
+  /* line 42, ../../../scss/partials/_header.scss */
   header .container {
     max-width: 59em;
+    height: 200px;
     background: white url(/assets/img/css/global/header-fam.png) no-repeat scroll right top;
   }
 }

@@ -1,5 +1,4 @@
 header {
-	overflow: hidden;
 	padding: 1em 0;
 	clear: both;
 
@@ -18,12 +17,11 @@ header {
 		ul {
 			max-width: 59em;	
 			margin: 0 auto;
-			@include clearfix;
+			@include clear-after;
 		}
 		
 		li {
 			float: left;
-			@include clearfix;
 /* 			@include sassy-button("glass", 0, 12px); */
 			@include sassy-button-gradient("glass", #323232); 
 /* 			background: linear-gradient(#323232 50%, #333333 51%, #101010 53%, #242424 100%) repeat scroll 0 0 rgba(0, 0, 0, 0); */
@@ -67,6 +65,7 @@ header {
 		
 @include at-breakpoint($break-m) {
 		@include set-container-width($break-m);
+		height: 170px;
 
 		.logo {
 			width: 300px;
@@ -81,6 +80,7 @@ header {
 
 @include at-breakpoint($break-l) {
 		@include set-container-width($break-l, magic);
+		height: 200px;
 		
 		background: #fff url(/assets/img/css/global/header-fam.png) no-repeat scroll right top;
 }

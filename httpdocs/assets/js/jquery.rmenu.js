@@ -17,16 +17,17 @@ $.fn.rmenu = function(options) {
 			$clonedLi,
 			$moreReveal;
 			
-
+		$this.css({position: 'relative'}).addClass('r-menu-container');
+			
 		// Append 'more' li
-		$origUl.append('<li class="' + config.moreReveal + '"  style="display: none;"><a class="more">More</a></li>');
+		$origUl.append('<li class="' + config.moreReveal + '"><a href="javascript://" class="more">More</a><div/></li>');
 
 		$origUl.addClass(config.mainClass);
 		$cloned = $this.clone();
 		$origLi = $origUl.children('li').not('li li'),
 		$clonedUl = $('ul', $cloned),
 		$clonedLi = null,
-		$moreReveal = $(config.moreReveal);
+		$moreReveal = $('.' + config.moreReveal);
 
 /*
 		console.log('this', $this);
@@ -72,8 +73,6 @@ $.fn.rmenu = function(options) {
 				var t = aggw,
 					toReveal;
 
-					console.log(t);
-					
 				$clonedLi.find('.' + config.moreReveal).hide();
 
 				toReveal = $clonedLi.not('.' + config.moreReveal).map(function(i, j) {
@@ -93,7 +92,7 @@ $.fn.rmenu = function(options) {
 					frag.append($(j).show());
 				});
 				
-				$moreReveal.empty().append(frag);
+				$moreReveal.show().find('>div').html(frag);
 			}
 			else {
 				$origLi.show().filter('.' + config.moreReveal).hide();
@@ -101,8 +100,17 @@ $.fn.rmenu = function(options) {
 			}
 		}).resize();
 		
-		$this.find('.' + config.moreReveal).on('click', function() {
-			$moreReveal.slideToggle();
+		$this.find('.' + config.moreReveal + ' .more').on('click', function(ev) {
+			ev.preventDefault();
+			var t = $moreReveal.find('>div');
+				
+			t.animate({
+				opacity: 'toggle',
+				height: 'toggle',
+				queue: false
+			}, 300);
+			
+/* 			t.slideToggle(200); */
 		});
 		
 		$origLi.not('.' + config.moreReveal).hover(function() {
